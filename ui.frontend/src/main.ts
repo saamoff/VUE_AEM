@@ -12,7 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
     new Vue({
       router: new VueRouter({
         mode: 'history',
-        routes: []
+        routes: [
+          {
+            path: '/basic',
+            name: 'basic'
+          },
+          {
+            path: '/social',
+            name: 'social'
+          },
+          {
+            path: '/certificates',
+            name: 'certificates'
+          }
+        ]
       }),
       render (createElement: Function) {
         return createElement(App, {
