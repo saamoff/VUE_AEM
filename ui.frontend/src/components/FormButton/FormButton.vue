@@ -60,7 +60,7 @@ export default {
   font-family: 'Inter';
   border: 0;
   text-decoration: none;
-  padding: 1% 1%;
+  padding: 12px 12px;
   cursor: pointer;
 }
 
@@ -72,7 +72,7 @@ export default {
   font-family: 'Inter';
   border: 0;
   text-decoration: none;
-  padding: 1% 1%;
+  padding: 12px 12px;
   cursor: pointer;
 }
 
@@ -84,7 +84,7 @@ export default {
   font-family: 'Inter';
   border: 0;
   text-decoration: none;
-  padding: 1% 1%;
+  padding: 12px 12px;
   cursor: pointer;
 }
 

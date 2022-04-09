@@ -2,11 +2,11 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-03-24T12:33:52.819-03:00"
+        cq:lastModified="{Date}2022-04-09T14:15:36.353-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/vue/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
-        jcr:title="My Vue App"
+        jcr:title="AEM Forms"
         sling:resourceType="vue/components/page"
         pwaCachestrategy="staleWhileRevalidate"
         pwaDisplay="standalone"
@@ -21,6 +21,473 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
+                <title
+                    jcr:created="{Date}2022-03-28T13:50:22.816-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T13:50:22.816-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_1576707433
+                    jcr:created="{Date}2022-03-28T13:50:30.630-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T13:50:30.630-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_1587864941
+                    jcr:created="{Date}2022-03-28T13:50:36.449-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T13:50:36.449-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_972529833
+                    jcr:created="{Date}2022-03-28T13:52:45.890-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T13:52:45.890-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_692165520
+                    jcr:created="{Date}2022-03-28T14:04:23.208-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T14:04:23.208-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_645060755
+                    jcr:created="{Date}2022-03-28T14:04:28.806-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-28T14:04:28.806-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_1532299691
+                    jcr:created="{Date}2022-03-29T13:48:20.319-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-29T13:48:20.319-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_1097393359
+                    jcr:created="{Date}2022-03-30T11:25:29.463-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-30T11:25:29.463-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_1025412455
+                    jcr:created="{Date}2022-03-30T11:25:44.722-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-30T11:25:44.722-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_1282498845
+                    jcr:created="{Date}2022-03-30T11:25:46.517-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-30T11:25:46.517-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_670327208
+                    jcr:created="{Date}2022-03-30T11:26:20.749-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-30T11:26:20.749-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_403164471
+                    jcr:created="{Date}2022-03-30T11:27:11.273-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-30T11:27:11.273-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_593472410
+                    jcr:created="{Date}2022-03-30T11:30:22.583-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-30T11:30:22.583-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_872807695
+                    jcr:created="{Date}2022-03-30T13:34:44.582-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-30T13:34:44.582-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_1326155574
+                    jcr:created="{Date}2022-03-30T13:50:37.826-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-30T13:50:37.826-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_1847888527
+                    jcr:created="{Date}2022-03-30T13:50:44.899-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-30T13:50:44.899-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_1168876778
+                    jcr:created="{Date}2022-03-30T14:19:55.190-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-30T14:19:55.190-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title"/>
+                <title_vue
+                    jcr:created="{Date}2022-03-30T14:43:10.857-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T15:11:12.217-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/title-vue"/>
+                <text_vue
+                    jcr:created="{Date}2022-03-31T15:06:40.929-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T15:06:40.929-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/text-vue"/>
+                <tab_title
+                    jcr:created="{Date}2022-03-31T15:44:07.977-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-06T14:14:46.537-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/tab-title"
+                    text="Forms"
+                    text2="First Tab">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="8"/>
+                    </cq:responsive>
+                </tab_title>
+                <forms_title
+                    jcr:created="{Date}2022-03-31T15:44:12.231-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-06T12:41:07.474-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/forms-title"
+                    classtype="forms"
+                    error=" "
+                    text="TÍTULO FORMULÁRIO"/>
+                <error_message
+                    jcr:created="{Date}2022-03-31T15:44:51.575-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-03-31T15:44:51.575-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/error-message"/>
+                <forms_button
+                    jcr:created="{Date}2022-04-01T15:06:47.071-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-04T14:12:42.528-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/forms-button"
+                    classtype="next"
+                    text="Next > "
+                    text2="botao-finish"/>
+                <forms_button_1936611470
+                    jcr:created="{Date}2022-04-04T14:12:54.640-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-04T14:18:39.774-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/forms-button"
+                    classtype="finish"
+                    text="✓ Finish "/>
+                <forms_button_1594289082
+                    jcr:created="{Date}2022-04-04T14:12:57.944-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-04T14:16:01.806-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/forms-button"
+                    classtype="more"
+                    text="+ More >"/>
+                <forms_button_1146144428
+                    jcr:created="{Date}2022-04-04T14:13:00.485-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-04T14:18:43.978-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/forms-button"
+                    classtype="return"
+                    text="Return ✓"/>
+                <forms_title_2076074136
+                    jcr:created="{Date}2022-04-06T12:42:11.207-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-06T12:42:46.582-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/forms-title"
+                    classtype="select"
+                    error="Please enter your Age"
+                    text="Birthday *"/>
+                <form_title
+                    jcr:created="{Date}2022-04-06T13:03:52.394-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-06T14:14:30.858-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/form-title"
+                    classtype="title"
+                    text="Team Sign Up">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="3"
+                            width="6"/>
+                    </cq:responsive>
+                </form_title>
+                <tabs
+                    jcr:created="{Date}2022-04-09T14:14:57.210-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-09T14:14:57.210-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/tabs">
+                    <item_1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 1"
+                        sling:resourceType="vue/components/container"
+                        layout="responsiveGrid"/>
+                    <item_2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 2"
+                        sling:resourceType="vue/components/container"
+                        layout="responsiveGrid"/>
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="3"
+                            width="6"/>
+                    </cq:responsive>
+                </tabs>
+                <form_options_518652884
+                    jcr:created="{Date}2022-04-05T11:36:09.821-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-06T12:03:25.330-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="vue/components/form-options"/>
+                <responsivegrid_1581401725
+                    jcr:created="{Date}2022-04-09T12:23:28.157-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-09T12:23:28.157-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="3"
+                            width="6"/>
+                    </cq:responsive>
+                    <form_input
+                        jcr:created="{Date}2022-04-08T21:54:20.742-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-09T13:01:05.053-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/form-input"
+                        inputtype="text"
+                        labeltext="Full name *"
+                        placetext="Foo bar"
+                        text=" ">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                        </cq:responsive>
+                    </form_input>
+                    <form_input_128501024
+                        jcr:created="{Date}2022-04-09T12:07:07.681-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-09T13:00:42.903-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/form-input"
+                        inputtype="text"
+                        labeltext="Nickname"
+                        placetext="Juanito"
+                        text=" ">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                        </cq:responsive>
+                    </form_input_128501024>
+                    <form_input_111898345
+                        jcr:created="{Date}2022-04-09T12:07:47.254-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-09T13:01:39.441-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/form-input"
+                        inputtype="email"
+                        labeltext="Email *"
+                        placetext="foo@bar.com"
+                        text=" ">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="3"/>
+                        </cq:responsive>
+                    </form_input_111898345>
+                    <form_input_177885346
+                        jcr:created="{Date}2022-04-09T12:10:34.225-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-09T13:03:27.424-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/form-input"
+                        inputtype="tel"
+                        labeltext="Phone"
+                        placetext="(83) 00000-0000"
+                        text=" ">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="2"/>
+                        </cq:responsive>
+                    </form_input_177885346>
+                </responsivegrid_1581401725>
+                <responsivegrid
+                    jcr:created="{Date}2022-04-06T15:53:55.718-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-04-06T15:53:55.718-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="3"
+                            width="6"/>
+                    </cq:responsive>
+                    <form_title_965434898
+                        jcr:created="{Date}2022-04-06T13:04:39.385-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-09T13:25:51.146-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/form-title"
+                        classtype="birthday"
+                        error=" "
+                        text="Birthday *"/>
+                    <form_select
+                        jcr:created="{Date}2022-04-06T13:11:41.207-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-09T13:19:06.424-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/form-select"
+                        datetype="Day"
+                        labeltext="Day">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="1"/>
+                        </cq:responsive>
+                    </form_select>
+                    <form_select_19993676
+                        jcr:created="{Date}2022-04-06T14:53:19.587-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-09T13:19:13.457-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/form-select"
+                        datetype="Month"
+                        labeltext="Month">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="1"/>
+                        </cq:responsive>
+                    </form_select_19993676>
+                    <form_select_20090909
+                        jcr:created="{Date}2022-04-06T14:53:30.360-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-09T13:19:17.795-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/form-select"
+                        datetype="Year"
+                        labeltext="Year">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="1"/>
+                        </cq:responsive>
+                    </form_select_20090909>
+                    <custom_input
+                        jcr:created="{Date}2022-04-08T21:22:24.418-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-08T21:34:01.585-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/custom-input"
+                        inputtype="text"
+                        labeltext="Full name"
+                        placetext="Foo bar"
+                        text="Enter your name"/>
+                    <form_select_17547547
+                        jcr:created="{Date}2022-04-06T14:53:32.071-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-06T14:53:53.727-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/form-select"
+                        datetype="Age">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="1"/>
+                        </cq:responsive>
+                    </form_select_17547547>
+                    <form_check
+                        jcr:created="{Date}2022-04-06T12:56:46.704-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-06T13:44:43.131-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/form-check"/>
+                    <form_button
+                        jcr:created="{Date}2022-04-06T13:04:08.181-03:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-09T12:14:32.349-03:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="vue/components/form-button"
+                        classtype="next"
+                        text="Next >">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="5"
+                                width="1"/>
+                        </cq:responsive>
+                    </form_button>
+                </responsivegrid>
                 <helloworld_1511794340
                     jcr:created="{Date}2022-03-24T12:32:59.583-03:00"
                     jcr:createdBy="admin"
@@ -70,4 +537,8 @@
             <file/>
         </image>
     </jcr:content>
+    <first-tab/>
+    <second-tab/>
+    <third-tab/>
+    <sucess-tab/>
 </jcr:root>

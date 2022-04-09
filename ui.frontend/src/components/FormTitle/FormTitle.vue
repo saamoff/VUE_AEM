@@ -40,6 +40,7 @@ div {
   font-size: 18px;
   line-height: 24px;
   color: #111111;
+  padding: 4% 0;
 }
 
 .birthday {
