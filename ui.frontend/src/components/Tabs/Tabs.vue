@@ -12,13 +12,16 @@ export default {
   name: 'Tabs',
   methods: {
     handleBasic () {
-      router.push({ name: 'basic' })
+      router.push({name: 'basic'})
+      location.reload()
     },
     handleSocial () {
-      router.push({ name: 'social' })
+      router.push({name: 'social'})
+      location.reload()
     },
     handleCertificates () {
-      router.push({ name: 'certificates' })
+      router.push({name: 'certificates'})
+      location.reload()
     }
   }
 }
