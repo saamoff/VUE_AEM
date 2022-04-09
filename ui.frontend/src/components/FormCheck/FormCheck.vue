@@ -66,6 +66,7 @@ p {
 }
 
 .error {
+  visibility: hidden;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 500;

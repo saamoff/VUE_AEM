@@ -1,32 +1,56 @@
 <template>
   <div id="navHeader">
-        <button @click="handleBasic">Basic</button>
-        <button @click="handleSocial">Social</button>
-        <button @click="handleCertificates">Certificates</button>
+    <button @click="handleBasic">Basic</button>
+    <button @click="handleSocial">Social</button>
+    <button @click="handleCertificates">Certificates</button>
   </div>
 </template>
 
 <script>
-import router from '@/src/main.ts'
+import router from '../../main'
 export default {
   name: 'Tabs',
   methods: {
     handleBasic () {
-      router.push({name: 'basic'})
+      router.push({ name: 'basic' })
       location.reload()
     },
     handleSocial () {
-      router.push({name: 'social'})
+      router.push({ name: 'social' })
       location.reload()
     },
     handleCertificates () {
-      router.push({name: 'certificates'})
+      router.push({ name: 'certificates' })
       location.reload()
     }
   }
 }
 </script>
 
-<style lang="scss" scoped>
-@import './index.scss';
+<style scoped>
+#navHeader {
+  font-family: 'Nunito';
+  display: flex;
+  justify-content: center;
+  width: 102%;
+  height: 4vh;
+}
+
+button {
+  font-size: 16px;
+  font-family: 'Nunito';
+  font-weight: 500;
+  width: 100%;
+  height: 4vh;
+  padding-bottom: 1%;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #aaaaaa;
+}
+
+button:hover {
+  border-bottom: 2px solid #074ee8;
+  color: #074ee8;
+  cursor: pointer;
+}
 </style>

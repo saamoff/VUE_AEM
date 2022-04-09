@@ -1,7 +1,6 @@
 <template>
   <div>
     <button :class="classtype">{{ text }}</button>
-    <img src="" alt="">
   </div>
 </template>
 
@@ -20,6 +19,7 @@ export default {
 </script>
 
 <style scoped>
+
 .next {
   background: #074ee8;
   border-radius: 4px;
@@ -40,7 +40,7 @@ export default {
   font-family: 'Inter';
   border: 0;
   text-decoration: none;
-  padding: 1% 1%;
+  padding: 12px 12px;
   cursor: pointer;
 }
 
@@ -52,7 +52,7 @@ export default {
   font-family: 'Inter';
   border: 0;
   text-decoration: none;
-  padding: 1% 1%;
+  padding: 12px 12px;
   cursor: pointer;
 }
 
@@ -64,7 +64,7 @@ export default {
   font-family: 'Inter';
   border: 0;
   text-decoration: none;
-  padding: 1% 1%;
+  padding: 12px 12px;
   cursor: pointer;
 }
 
