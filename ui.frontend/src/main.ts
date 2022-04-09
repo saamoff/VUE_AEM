@@ -14,16 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
         mode: 'history',
         routes: [
           {
-            path: '/basic',
+            path: '/content/vue/vue/first-tab.html',
             name: 'basic'
           },
           {
-            path: '/social',
+            path: '/content/vue/vue/second-tab.html',
             name: 'social'
           },
           {
-            path: '/certificates',
+            path: '/content/vue/vue/third-tab.html',
             name: 'certificates'
+          },
+          {
+            path: '/content/vue/vue/success-tab.html',
+            name: 'success'
           }
         ]
       }),
