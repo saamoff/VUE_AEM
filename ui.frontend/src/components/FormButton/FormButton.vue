@@ -1,7 +1,7 @@
 <template>
   <div>
     <button @click="switchPage" :class="classtype">{{ text }}</button>
-    <img src="" alt="">
+    <img src="" alt="" />
   </div>
 </template>
 
@@ -20,7 +20,12 @@ export default {
   methods: {
     switchPage () {
       if (this.classtype === 'next1') {
-        alert('')
+        if (localStorage.getItem('fullname' && 'email')) {
+          this.$router.replace({ name: 'social' })
+          location.reload()
+        } else {
+          document.getElementsByClassName('fullname').style.visibility = 'visible'
+        }
       }
     }
   }
@@ -33,7 +38,7 @@ export default {
   border-radius: 4px;
   color: white;
   font-size: 16px;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: 0;
   text-decoration: none;
   padding: 12px 12px;
@@ -45,7 +50,7 @@ export default {
   border-radius: 4px;
   color: white;
   font-size: 16px;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: 0;
   text-decoration: none;
   padding: 12px 12px;
@@ -57,7 +62,7 @@ export default {
   border-radius: 4px;
   color: white;
   font-size: 16px;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: 0;
   text-decoration: none;
   padding: 12px 12px;
@@ -69,7 +74,7 @@ export default {
   border-radius: 4px;
   color: white;
   font-size: 16px;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: 0;
   text-decoration: none;
   padding: 12px 12px;
@@ -81,11 +86,10 @@ export default {
   border-radius: 4px;
   color: white;
   font-size: 16px;
-  font-family: 'Inter';
+  font-family: "Inter";
   border: 0;
   text-decoration: none;
   padding: 12px 12px;
   cursor: pointer;
 }
-
 </style>

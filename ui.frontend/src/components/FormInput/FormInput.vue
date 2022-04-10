@@ -2,15 +2,15 @@
   <div class="container">
     <div id="labelTxt">
       <h1 id="jsLabel">{{ labeltext }}</h1>
-      <p id="jsError">{{ text }}</p>
+      <p :class="inputid">{{ text }}</p>
     </div>
     <input
+      @blur="getValue"
       v-model="content"
-      id="inputStyle"
+      :id="inputid"
       :type="inputtype"
       :placeholder="placetext"
     />
-    <p> {{content}} </p>
   </div>
 </template>
 
@@ -37,11 +37,20 @@ export default {
     },
     placetext: {
       type: String
+    },
+    inputid: {
+      type: String,
+      default: 'fullname'
     }
   },
   methods: {
-    inputValue () {
-
+    getValue () {
+      if (this.inputid === 'fullname') {
+        localStorage.setItem('fullname', this.content)
+      }
+      if (this.inputid === 'email') {
+        localStorage.setItem('email', this.content)
+      }
     }
   }
 }
@@ -52,7 +61,7 @@ export default {
   margin-top: 3%;
 }
 
-#inputStyle {
+#fullname {
   color: #767676;
   font-size: 15px;
   font-weight: 500;
@@ -61,7 +70,28 @@ export default {
   padding: 8px;
   border-radius: 4px;
 }
-#inputStyle:focus {
+
+#nickname {
+  color: #767676;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#email {
+  color: #767676;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+input:focus {
   outline: none;
 }
 #labelTxt {
@@ -76,12 +106,23 @@ export default {
   font-size: 14px;
   color: #767676;
 }
-#jsError {
+.fullname {
   margin: 0;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   color: red;
+  visibility: hidden;
+}
+
+.email {
+  margin: 0;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: red;
+  visibility: hidden;
 }
 </style>

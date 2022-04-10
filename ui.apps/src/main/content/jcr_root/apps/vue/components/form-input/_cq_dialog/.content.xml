@@ -30,7 +30,12 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Placeholder text"
-                        name="./placetext"/>                                    
+                        name="./placetext"/>      
+                    <inputid
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Input id"
+                        name="./inputid"/>                                  
                 </items>
             </column>
         </items>
