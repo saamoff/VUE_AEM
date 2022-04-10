@@ -199,6 +199,7 @@ export default {
       this.inputday = inputday.options[inputday.selectedIndex].value
       const inputmonth = document.querySelector('#month')
       this.inputmonth = inputmonth.options[inputmonth.selectedIndex].value
+      this.storagemonth = parseInt(this.inputmonth) + 1
       const inputyear = document.querySelector('#year')
       this.inputyear = inputyear.options[inputyear.selectedIndex].value
 
@@ -213,6 +214,12 @@ export default {
           this.age = `${year - this.inputyear - 1}`
         }
       }
+    },
+    setValue () {
+      localStorage.setItem('age', this.age)
+      localStorage.setItem('day', this.inputday)
+      localStorage.setItem('month', this.storagemonth)
+      localStorage.setItem('year', this.inputyear)
     }
   },
 
@@ -220,6 +227,7 @@ export default {
     setInterval(() => {
       this.getValue()
     }, 1000)
+    this.setValue()
   }
 }
 </script>

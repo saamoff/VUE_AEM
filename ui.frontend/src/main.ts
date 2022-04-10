@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'certificates'
           },
           {
-            path: '/content/vue/vue/success-tab.html',
-            name: 'success'
+            path: '/content/vue/vue/sucess-tab.html',
+            name: 'sucess'
           }
         ]
       }),

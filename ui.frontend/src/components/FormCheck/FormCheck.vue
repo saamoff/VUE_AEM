@@ -2,7 +2,7 @@
   <div>
     <input type="checkbox" id="check" />
     <p>I accept the terms and privacy</p>
-    <p class="error">Please confirm the terms</p>
+    <p id="check-error">Please confirm the terms</p>
   </div>
 </template>
 
@@ -65,7 +65,7 @@ p {
   color: #111111;
 }
 
-.error {
+#check-error {
   visibility: hidden;
   font-family: "Nunito";
   font-style: normal;

@@ -1,8 +1,8 @@
 <template>
   <div id="navHeader">
-    <button @click="handleBasic">Basic</button>
-    <button @click="handleSocial">Social</button>
-    <button @click="handleCertificates">Certificates</button>
+    <button id="basic" @click="handleBasic">Basic</button>
+    <button id="social" @click="handleSocial">Social</button>
+    <button id="ceritificates" @click="handleCertificates">Certificates</button>
   </div>
 </template>
 
@@ -46,11 +46,21 @@ button {
   background: transparent;
   border: 0;
   border-bottom: 2px solid #aaaaaa;
-}
-
-button:hover {
-  border-bottom: 2px solid #074ee8;
-  color: #074ee8;
   cursor: pointer;
 }
+#basic {
+border-bottom: 2px solid #074EE8;
+color: #074EE8;
+}
+
+#social {
+border-bottom: 2px solid #aaaaaa;
+color: black;
+}
+
+#certificates {
+border-bottom: 2px solid #aaaaaa;
+color: black;
+}
+
 </style>

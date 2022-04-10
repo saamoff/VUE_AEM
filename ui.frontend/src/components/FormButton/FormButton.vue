@@ -1,7 +1,6 @@
 <template>
   <div>
     <button @click="switchPage" :class="classtype">{{ text }}</button>
-    <img src="" alt="" />
   </div>
 </template>
 
@@ -20,12 +19,149 @@ export default {
   methods: {
     switchPage () {
       if (this.classtype === 'next1') {
-        if (localStorage.getItem('fullname' && 'email')) {
+        if (
+          localStorage.getItem('fullname') &&
+          localStorage.getItem('email') &&
+          document.querySelector('#check').checked
+        ) {
           this.$router.replace({ name: 'social' })
           location.reload()
         } else {
-          document.getElementsByClassName('fullname').style.visibility = 'visible'
+          if (localStorage.getItem('email')) {
+            document.getElementById('email').style.visibility = 'hidden'
+            document.getElementById('fullname').style.visibility = 'visible'
+            document.getElementById('check-error').style.visibility = 'visible'
+          }
+          if (localStorage.getItem('fullname')) {
+            document.getElementById('fullname').style.visibility = 'hidden'
+            document.getElementById('email').style.visibility = 'visible'
+            document.getElementById('check-error').style.visibility = 'visible'
+          }
+          if (
+            !localStorage.getItem('fullname') &&
+            !localStorage.getItem('email') &&
+            document.querySelector('#check').checked
+          ) {
+            document.getElementById('email').style.visibility = 'visible'
+            document.getElementById('fullname').style.visibility = 'visible'
+            document.getElementById('check-error').style.visibility = 'hidden'
+          }
+          if (
+            !document.querySelector('#check').checked &&
+            localStorage.getItem('email') &&
+            localStorage.getItem('fullname')
+          ) {
+            document.getElementById('check-error').style.visibility = 'visible'
+            document.getElementById('email').style.visibility = 'hidden'
+            document.getElementById('fullname').style.visibility = 'hidden'
+          }
+          if (
+            !document.querySelector('#check').checked &&
+            !localStorage.getItem('email') &&
+            !localStorage.getItem('fullname')
+          ) {
+            document.getElementById('check-error').style.visibility = 'visible'
+            document.getElementById('email').style.visibility = 'visible'
+            document.getElementById('fullname').style.visibility = 'visible'
+          }
+          if (
+            document.querySelector('#check').checked &&
+            localStorage.getItem('email') &&
+            !localStorage.getItem('fullname')
+          ) {
+            document.getElementById('check-error').style.visibility = 'hidden'
+            document.getElementById('email').style.visibility = 'hidden'
+            document.getElementById('fullname').style.visibility = 'visible'
+          }
+
+          if (
+            document.querySelector('#check').checked &&
+            !localStorage.getItem('email') &&
+            localStorage.getItem('fullname')
+          ) {
+            document.getElementById('check-error').style.visibility = 'hidden'
+            document.getElementById('email').style.visibility = 'visible'
+            document.getElementById('fullname').style.visibility = 'hidden'
+          }
         }
+      }
+      if (this.classtype === 'next2') {
+        if (localStorage.getItem('github')) {
+          this.$router.replace({ name: 'certificates' })
+          location.reload()
+        } else {
+          document.getElementById('github').style.visibility = 'visible'
+        }
+      }
+
+      if (this.classtype === 'finish') {
+        if (
+          localStorage.getItem('teamname') &&
+          localStorage.getItem('instituition') &&
+          localStorage.getItem('graduation')
+        ) {
+          this.$router.replace({ name: 'sucess' })
+          location.reload()
+        } else {
+          if (
+            !localStorage.getItem('teamname') &&
+            !localStorage.getItem('instituition') &&
+            !localStorage.getItem('graduation')
+          ) {
+            document.getElementById('teamname').style.visibility = 'visible'
+            document.getElementById('instituition').style.visibility = 'visible'
+            document.getElementById('graduation').style.visibility = 'visible'
+          }
+
+          if (localStorage.getItem('teamname')) {
+            document.getElementById('teamname').style.visibility = 'hidden'
+            document.getElementById('instituition').style.visibility = 'visible'
+            document.getElementById('graduation').style.visibility = 'visible'
+          }
+
+          if (localStorage.getItem('instituition')) {
+            document.getElementById('teamname').style.visibility = 'visible'
+            document.getElementById('instituition').style.visibility = 'hidden'
+            document.getElementById('graduation').style.visibility = 'visible'
+          }
+
+          if (localStorage.getItem('graduation')) {
+            document.getElementById('teamname').style.visibility = 'visible'
+            document.getElementById('instituition').style.visibility = 'visible'
+            document.getElementById('graduation').style.visibility = 'hidden'
+          }
+
+          if (
+            localStorage.getItem('teamname') &&
+            localStorage.getItem('instituition')
+          ) {
+            document.getElementById('teamname').style.visibility = 'hidden'
+            document.getElementById('instituition').style.visibility = 'hidden'
+            document.getElementById('graduation').style.visibility = 'visible'
+          }
+
+          if (
+            localStorage.getItem('teamname') &&
+            localStorage.getItem('graduation')
+          ) {
+            document.getElementById('teamname').style.visibility = 'hidden'
+            document.getElementById('instituition').style.visibility = 'visible'
+            document.getElementById('graduation').style.visibility = 'hidden'
+          }
+
+          if (
+            localStorage.getItem('graduation') &&
+            localStorage.getItem('instituition')
+          ) {
+            document.getElementById('teamname').style.visibility = 'visible'
+            document.getElementById('instituition').style.visibility = 'hidden'
+            document.getElementById('graduation').style.visibility = 'hidden'
+          }
+        }
+      }
+      if (this.classtype === 'return') {
+        this.$router.replace({ name: 'basic' })
+        location.reload()
       }
     }
   }

@@ -1,16 +1,65 @@
 <template>
   <div>
-    <p>{{ text }}</p>
+    <p>Your data has been sent successfully!</p>
+    <p>Full name: {{fullname}} </p>
+    <p>Email: {{email}} </p>
+    <p>Birthday:{{day}}/{{month}}/{{year}} </p>
+    <p>Age: {{age}} </p>
+    <p>Github: {{github}} </p>
+    <p>Certificates: {{certificates}} </p>
+    <p>Team Name: {{teamname}} </p>
+    <p>Instituition: {{instituition}} </p>
+    <p>Graduation: {{graduation}} </p>
   </div>
 </template>
 
 <script>
 export default {
   name: 'FormText',
-  props: {
-    text: {
-      type: String,
-      default: 'Páragrafo padrão'
+
+  computed: {
+    fullname () {
+      return localStorage.getItem('fullname')
+    },
+
+    email () {
+      return localStorage.getItem('email')
+    },
+
+    age () {
+      return localStorage.getItem('age')
+    },
+
+    day () {
+      return localStorage.getItem('day')
+    },
+
+    month () {
+      return (localStorage.getItem('month'))
+    },
+
+    year () {
+      return localStorage.getItem('year')
+    },
+
+    github () {
+      return localStorage.getItem('github')
+    },
+
+    certificates () {
+      return localStorage.getItem('certificates')
+    },
+
+    teamname () {
+      return localStorage.getItem('teamname')
+    },
+
+    instituition () {
+      return localStorage.getItem('instituition')
+    },
+
+    graduation () {
+      return localStorage.getItem('graduation')
     }
   }
 }

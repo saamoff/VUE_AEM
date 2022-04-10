@@ -2,12 +2,12 @@
   <div class="container">
     <div id="labelTxt">
       <h1 id="jsLabel">{{ labeltext }}</h1>
-      <p :class="inputid">{{ text }}</p>
+      <p :id="inputid">{{ text }}</p>
     </div>
     <input
-      @blur="getValue"
+      @blur="setValue"
       v-model="content"
-      :id="inputid"
+      :class="inputid"
       :type="inputtype"
       :placeholder="placetext"
     />
@@ -25,7 +25,7 @@ export default {
   props: {
     text: {
       type: String,
-      default: 'Mensagem de erro'
+      default: ''
     },
     inputtype: {
       type: String,
@@ -44,12 +44,30 @@ export default {
     }
   },
   methods: {
-    getValue () {
+    setValue () {
       if (this.inputid === 'fullname') {
         localStorage.setItem('fullname', this.content)
       }
+      if (this.inputid === 'nickname') {
+        localStorage.setItem('nickname', this.content)
+      }
       if (this.inputid === 'email') {
         localStorage.setItem('email', this.content)
+      }
+      if (this.inputid === 'github') {
+        localStorage.setItem('github', this.content)
+      }
+      if (this.inputid === 'certificates') {
+        localStorage.setItem('certificates', this.content)
+      }
+      if (this.inputid === 'teamname') {
+        localStorage.setItem('teamname', this.content)
+      }
+      if (this.inputid === 'instituition') {
+        localStorage.setItem('instituition', this.content)
+      }
+      if (this.inputid === 'graduation') {
+        localStorage.setItem('graduation', this.content)
       }
     }
   }
@@ -61,7 +79,7 @@ export default {
   margin-top: 3%;
 }
 
-#fullname {
+.fullname {
   color: #767676;
   font-size: 15px;
   font-weight: 500;
@@ -71,7 +89,7 @@ export default {
   border-radius: 4px;
 }
 
-#nickname {
+.nickname {
   color: #767676;
   font-size: 15px;
   font-weight: 500;
@@ -81,7 +99,7 @@ export default {
   border-radius: 4px;
 }
 
-#email {
+.email {
   color: #767676;
   font-size: 15px;
   font-weight: 500;
@@ -89,6 +107,59 @@ export default {
   border: 2px solid #ccc;
   padding: 8px;
   border-radius: 4px;
+}
+
+.github {
+  color: #767676;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 20%;
+}
+
+.teamname {
+  color: #767676;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.instituition {
+  color: #767676;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.graduation {
+  color: #767676;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 5%;
+}
+
+.certificates {
+  color: #767676;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 5%;
 }
 
 input:focus {
@@ -106,7 +177,7 @@ input:focus {
   font-size: 14px;
   color: #767676;
 }
-.fullname {
+#fullname {
   margin: 0;
   font-family: "Nunito";
   font-style: normal;
@@ -116,7 +187,47 @@ input:focus {
   visibility: hidden;
 }
 
-.email {
+#email {
+  margin: 0;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: red;
+  visibility: hidden;
+}
+
+#github {
+  margin: 0;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: red;
+  visibility: hidden;
+}
+
+#teamname {
+  margin: 0;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: red;
+  visibility: hidden;
+}
+
+#instituition {
+  margin: 0;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: red;
+  visibility: hidden;
+}
+
+#graduation {
   margin: 0;
   font-family: "Nunito";
   font-style: normal;
