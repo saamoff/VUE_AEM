@@ -180,6 +180,7 @@ export default {
   border: 2px solid #ccc;
   padding: 8px;
   border-radius: 4px;
+  margin: 0;
 }
 
 input:focus {
@@ -255,5 +256,17 @@ input:focus {
   font-size: 14px;
   color: red;
   visibility: hidden;
+}
+
+#tel {
+  display: none;
+}
+
+#nickname {
+  display: none;
+}
+
+#linkedin {
+  display: none;
 }
 </style>
