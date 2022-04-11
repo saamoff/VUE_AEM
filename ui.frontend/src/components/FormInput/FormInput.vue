@@ -107,6 +107,7 @@ export default {
   border: 2px solid #ccc;
   padding: 8px;
   border-radius: 4px;
+  margin-bottom: 5%;
 }
 
 .github {
