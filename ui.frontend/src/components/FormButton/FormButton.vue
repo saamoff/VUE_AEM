@@ -169,6 +169,7 @@ export default {
 </script>
 
 <style scoped>
+
 .next1 {
   background: #074ee8;
   border-radius: 4px;
@@ -176,9 +177,12 @@ export default {
   font-size: 16px;
   font-family: "Inter";
   border: 0;
+  width: 5em;
+  height: 2.5em;
   text-decoration: none;
-  padding: 12px 12px;
+  padding: 0;
   cursor: pointer;
+  margin-left: 60%;
 }
 
 .next2 {
@@ -188,9 +192,13 @@ export default {
   font-size: 16px;
   font-family: "Inter";
   border: 0;
+  width: 5em;
+  height: 2.5em;
   text-decoration: none;
-  padding: 12px 12px;
+  padding: 0;
   cursor: pointer;
+  margin-left: 60%;
+
 }
 
 .finish {
@@ -200,9 +208,11 @@ export default {
   font-size: 16px;
   font-family: "Inter";
   border: 0;
+  width: 5em;
+  height: 2.5em;
   text-decoration: none;
-  padding: 12px 12px;
-  cursor: pointer;
+  padding: 0;
+  margin-left: 60%;
 }
 
 .more {
@@ -212,9 +222,11 @@ export default {
   font-size: 16px;
   font-family: "Inter";
   border: 0;
+  width: 5em;
+  height: 2.5em;
   text-decoration: none;
-  padding: 12px 12px;
-  cursor: pointer;
+  padding: 0;
+  margin-left: 60%;
 }
 
 .return {
@@ -224,8 +236,11 @@ export default {
   font-size: 16px;
   font-family: "Inter";
   border: 0;
+  width: 5em;
+  height: 2.5em;
   text-decoration: none;
-  padding: 12px 12px;
-  cursor: pointer;
+  padding: 0;
+  margin-left: 60%;
+
 }
 </style>

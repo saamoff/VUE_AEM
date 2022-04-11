@@ -160,7 +160,7 @@
       </select>
     </div>
     <div v-if="datetype == 'Age'" class="age">
-      <label for="">Age</label>
+      <label id="border" for="">Age</label>
       <p>{{ age }}</p>
     </div>
   </section>
@@ -233,13 +233,21 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 1200px) {
+  #month, label, .age{
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  #month {
+    margin-left: 10%;
+  }
+}
+
 div {
   display: flex;
   flex-direction: column;
-}
-
-.age {
-  margin-left: 40%;
 }
 
 .age p {

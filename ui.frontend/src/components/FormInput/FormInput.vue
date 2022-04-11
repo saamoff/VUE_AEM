@@ -75,6 +75,12 @@ export default {
 </script>
 
 <style scoped>
+
+@media (max-width: 600px) {
+  #labelTxt{
+    margin-top: 10%;
+  }
+}
 .container {
   margin-top: 3%;
 }
@@ -131,7 +137,7 @@ export default {
   border-radius: 4px;
 }
 
-.instituition {
+.institution {
   color: #767676;
   font-size: 15px;
   font-weight: 500;
