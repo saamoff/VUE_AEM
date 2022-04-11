@@ -3,7 +3,7 @@
     <p>Your data has been sent successfully!</p>
     <p>Full name: {{fullname}} </p>
     <p>Email: {{email}} </p>
-    <p>Birthday:{{day}}/{{month}}/{{year}} </p>
+    <p>Birthday: {{day}}/{{month}}/{{year}} </p>
     <p>Age: {{age}} </p>
     <p>Github: {{github}} </p>
     <p>Certificates: {{certificates}} </p>

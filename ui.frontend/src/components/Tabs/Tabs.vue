@@ -1,27 +1,24 @@
 <template>
   <div id="navHeader">
-    <button id="basic" @click="handleBasic">Basic</button>
-    <button id="social" @click="handleSocial">Social</button>
-    <button id="ceritificates" @click="handleCertificates">Certificates</button>
+    <p :id="Idb">Basic</p>
+    <p :id="Ids">Social</p>
+    <p :id="Idc">Certificates</p>
   </div>
 </template>
 
 <script>
-import router from '../../main'
+
 export default {
   name: 'Tabs',
-  methods: {
-    handleBasic () {
-      router.push({ name: 'basic' })
-      location.reload()
+  props: {
+    Idb: {
+      type: String
     },
-    handleSocial () {
-      router.push({ name: 'social' })
-      location.reload()
+    Ids: {
+      type: String
     },
-    handleCertificates () {
-      router.push({ name: 'certificates' })
-      location.reload()
+    Idc: {
+      type: String
     }
   }
 }
@@ -34,11 +31,13 @@ export default {
   justify-content: center;
   width: 102%;
   height: 4vh;
+  margin-bottom: 5%;
 }
 
-button {
+p {
   font-size: 16px;
   font-family: 'Nunito';
+  text-align: center;
   font-weight: 500;
   width: 100%;
   height: 4vh;
@@ -48,19 +47,10 @@ button {
   border-bottom: 2px solid #aaaaaa;
   cursor: pointer;
 }
-#basic {
+
+#colorTab {
 border-bottom: 2px solid #074EE8;
 color: #074EE8;
-}
-
-#social {
-border-bottom: 2px solid #aaaaaa;
-color: black;
-}
-
-#certificates {
-border-bottom: 2px solid #aaaaaa;
-color: black;
 }
 
 </style>

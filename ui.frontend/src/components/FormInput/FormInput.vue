@@ -40,7 +40,7 @@ export default {
     },
     inputid: {
       type: String,
-      default: 'fullname'
+      default: ''
     }
   },
   methods: {
@@ -160,6 +160,26 @@ export default {
   padding: 8px;
   border-radius: 4px;
   margin-bottom: 5%;
+}
+
+.linkedin {
+  color: #767676;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.tel {
+  color: #767676;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
 }
 
 input:focus {
