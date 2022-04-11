@@ -97,7 +97,7 @@ export default {
       if (this.classtype === 'finish') {
         if (
           localStorage.getItem('teamname') &&
-          localStorage.getItem('instituition') &&
+          localStorage.getItem('institution') &&
           localStorage.getItem('graduation')
         ) {
           this.$router.replace({ name: 'sucess' })
@@ -105,38 +105,38 @@ export default {
         } else {
           if (
             !localStorage.getItem('teamname') &&
-            !localStorage.getItem('instituition') &&
+            !localStorage.getItem('institution') &&
             !localStorage.getItem('graduation')
           ) {
             document.getElementById('teamname').style.visibility = 'visible'
-            document.getElementById('instituition').style.visibility = 'visible'
+            document.getElementById('institution').style.visibility = 'visible'
             document.getElementById('graduation').style.visibility = 'visible'
           }
 
           if (localStorage.getItem('teamname')) {
             document.getElementById('teamname').style.visibility = 'hidden'
-            document.getElementById('instituition').style.visibility = 'visible'
+            document.getElementById('institution').style.visibility = 'visible'
             document.getElementById('graduation').style.visibility = 'visible'
           }
 
-          if (localStorage.getItem('instituition')) {
+          if (localStorage.getItem('institution')) {
             document.getElementById('teamname').style.visibility = 'visible'
-            document.getElementById('instituition').style.visibility = 'hidden'
+            document.getElementById('institution').style.visibility = 'hidden'
             document.getElementById('graduation').style.visibility = 'visible'
           }
 
           if (localStorage.getItem('graduation')) {
             document.getElementById('teamname').style.visibility = 'visible'
-            document.getElementById('instituition').style.visibility = 'visible'
+            document.getElementById('institution').style.visibility = 'visible'
             document.getElementById('graduation').style.visibility = 'hidden'
           }
 
           if (
             localStorage.getItem('teamname') &&
-            localStorage.getItem('instituition')
+            localStorage.getItem('institution')
           ) {
             document.getElementById('teamname').style.visibility = 'hidden'
-            document.getElementById('instituition').style.visibility = 'hidden'
+            document.getElementById('institution').style.visibility = 'hidden'
             document.getElementById('graduation').style.visibility = 'visible'
           }
 
@@ -145,16 +145,16 @@ export default {
             localStorage.getItem('graduation')
           ) {
             document.getElementById('teamname').style.visibility = 'hidden'
-            document.getElementById('instituition').style.visibility = 'visible'
+            document.getElementById('institution').style.visibility = 'visible'
             document.getElementById('graduation').style.visibility = 'hidden'
           }
 
           if (
             localStorage.getItem('graduation') &&
-            localStorage.getItem('instituition')
+            localStorage.getItem('institution')
           ) {
             document.getElementById('teamname').style.visibility = 'visible'
-            document.getElementById('instituition').style.visibility = 'hidden'
+            document.getElementById('institution').style.visibility = 'hidden'
             document.getElementById('graduation').style.visibility = 'hidden'
           }
         }
@@ -213,6 +213,7 @@ export default {
   text-decoration: none;
   padding: 0;
   margin-left: 60%;
+  cursor: pointer;
 }
 
 .more {
@@ -241,6 +242,6 @@ export default {
   text-decoration: none;
   padding: 0;
   margin-left: 60%;
-
+  cursor: pointer;
 }
 </style>

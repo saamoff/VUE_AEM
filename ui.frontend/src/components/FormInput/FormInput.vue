@@ -63,8 +63,8 @@ export default {
       if (this.inputid === 'teamname') {
         localStorage.setItem('teamname', this.content)
       }
-      if (this.inputid === 'instituition') {
-        localStorage.setItem('instituition', this.content)
+      if (this.inputid === 'institution') {
+        localStorage.setItem('institution', this.content)
       }
       if (this.inputid === 'graduation') {
         localStorage.setItem('graduation', this.content)
@@ -75,12 +75,6 @@ export default {
 </script>
 
 <style scoped>
-
-@media (max-width: 600px) {
-  #labelTxt{
-    margin-top: 10%;
-  }
-}
 .container {
   margin-top: 3%;
 }
@@ -245,7 +239,7 @@ input:focus {
   visibility: hidden;
 }
 
-#instituition {
+#institution {
   margin: 0;
   font-family: "Nunito";
   font-style: normal;

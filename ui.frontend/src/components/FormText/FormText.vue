@@ -8,7 +8,7 @@
     <p>Github: {{github}} </p>
     <p>Certificates: {{certificates}} </p>
     <p>Team Name: {{teamname}} </p>
-    <p>Instituition: {{instituition}} </p>
+    <p>Institution: {{institution}} </p>
     <p>Graduation: {{graduation}} </p>
   </div>
 </template>
@@ -54,8 +54,8 @@ export default {
       return localStorage.getItem('teamname')
     },
 
-    instituition () {
-      return localStorage.getItem('instituition')
+    institution () {
+      return localStorage.getItem('institution')
     },
 
     graduation () {
